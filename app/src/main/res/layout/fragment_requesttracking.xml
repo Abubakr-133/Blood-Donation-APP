@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="313dp"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="10dp"
+    tools:context=".requesttrackingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:background="#c1e8ff"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="DonorPhNo."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toStartOf="@+id/Donorphno_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="Donor Name"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="Blood Group"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView22"
+            app:layout_constraintEnd_toStartOf="@+id/bloodgroupmr_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="Patient Name"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toStartOf="@+id/patientnamemr_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patientnamemr_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/donornamemr_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/patientnamemr_text" />
+
+        <TextView
+            android:id="@+id/Donorphno_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/donornamemr_text" />
+
+        <TextView
+            android:id="@+id/bloodgroupmr_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="TextView"
+            android:textAlignment="viewStart"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/Donorphno_text" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="271dp"
+            android:layout_height="24dp"
+            android:text="DONATION CONFIRMATION"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bloodgroupmr_text" />
+
+        <Button
+            android:id="@+id/donationcomplete_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="CONFIRM DONATION"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <Button
+            android:id="@+id/donationcancelled_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="CANCELLED"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/donationcomplete_button"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
